@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule} from "@angular/common";
+import { Item } from "./item";
+import { ItemComponent } from './item/item.component';
 
 @Component({
   standalone: true,
   selector: 'app-root',
-  imports: [CommonModule],
+  imports: [CommonModule, ItemComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -14,7 +16,7 @@ export class AppComponent {
   filter: "all" | "active" | "done" = "all";
 
   allItems = [
-{description: "eat", done: true},
+{description: "Get a Werkstudent at Kisters", done: true},
 {description: "sleep", done: false},
 {description: "play", done: false},
 {description: "laugh", done: false},
@@ -29,6 +31,11 @@ export class AppComponent {
       done: false
     });
   }
+
+  remove(item: Item){
+    this.allItems.splice(this.allItems.indexOf(item),1);
+  }
+
 
   get items(){
     if(this.filter === "all"){
