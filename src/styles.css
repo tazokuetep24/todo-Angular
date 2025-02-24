@@ -72,3 +72,7 @@ footer p {
   margin-top: 1rem;
   gap: 1rem;
 }
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
