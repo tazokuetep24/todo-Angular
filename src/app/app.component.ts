@@ -16,10 +16,12 @@ export class AppComponent {
   filter: "all" | "active" | "done" = "all";
 
   allItems = [
-{description: "Get a Werkstudent at Kisters", done: true},
-{description: "sleep", done: false},
-{description: "play", done: false},
-{description: "laugh", done: false},
+{description: "Write Patrick a message", done: false},
+{description: "Drink my morning coffee", done: false},
+{description: "Schedule an Interview with Patrick", done: false},
+{description: "Walk my dog Spooks", done: false},
+{description: "Meet Patrick on coming Monday", done: false},
+{description: "Employ Patrick as a Working Student :)", done: false},
 
   ];
 

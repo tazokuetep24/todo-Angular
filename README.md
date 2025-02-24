@@ -30,7 +30,7 @@ This project is a simple **Todo List Application** built using **Angular**. It a
 ```
 /todo-app-angular
 
-|--
+|——
 │── index.html
 │── styles.css
 │── app.component.html
